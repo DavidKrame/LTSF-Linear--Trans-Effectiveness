@@ -9,8 +9,9 @@ fi
 model_name=Transformer
 seq_len=96
 
-for pred_len in 192 384 768
+for pred_len in 96 192 384 768
 do
+
   python -u run_longExp.py \
       --is_training 1 \
       --root_path ./dataset/ \
@@ -53,7 +54,7 @@ do
       --des 'Exp' \
       --itr 1  >logs/Transformer/$model_name'_Etth1'_$seq_len'_'$pred_len.log
       
-  python -u run_longExp.py \
+    python -u run_longExp.py \
       --is_training 1 \
       --root_path ./dataset/ \
       --data_path ETTm1.csv \
@@ -73,11 +74,7 @@ do
       --c_out 7 \
       --des 'Exp' \
       --itr 1  >logs/Transformer/$model_name'_Ettm1'_$seq_len'_'$pred_len.log
-done
-
-for pred_len in 96 192 384 768
-do
-
+      
     python -u run_longExp.py \
       --is_training 1 \
       --root_path ./dataset/ \

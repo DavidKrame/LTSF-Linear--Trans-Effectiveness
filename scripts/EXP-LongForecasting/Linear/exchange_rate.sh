@@ -6,7 +6,7 @@ fi
 if [ ! -d "./logs/LongForecasting" ]; then
     mkdir ./logs/LongForecasting
 fi
-seq_len=336
+seq_len=96
 model_name=DLinear
 
 python -u run_longExp.py \
@@ -41,7 +41,7 @@ python -u run_longExp.py \
   --is_training 1 \
   --root_path ./dataset/ \
   --data_path exchange_rate.csv \
-  --model_id Exchange_$seq_len'_'336 \
+  --model_id Exchange_$seq_len'_'384 \
   --model $model_name \
   --data custom \
   --features M \
@@ -49,7 +49,7 @@ python -u run_longExp.py \
   --pred_len 336 \
   --enc_in 8 \
   --des 'Exp' \
-  --itr 1 --batch_size 32  --learning_rate 0.0005 >logs/LongForecasting/$model_name'_'Exchange_$seq_len'_'336.log 
+  --itr 1 --batch_size 32  --learning_rate 0.0005 >logs/LongForecasting/$model_name'_'Exchange_$seq_len'_'384.log 
 
 python -u run_longExp.py \
   --is_training 1 \
