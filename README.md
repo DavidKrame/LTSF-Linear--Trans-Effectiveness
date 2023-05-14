@@ -1,3 +1,26 @@
+# EXEMPLES
+To train *NLinear* and *DLinear* on **ETTh1** daset, use :  
+```sh
+sh scripts/EXP-LongForecasting/Linear/univariate/etth1UNI.sh
+```
+To train *NLinear* and *DLinear* on **ETTm1** daset, use :  
+```sh
+sh scripts/EXP-LongForecasting/Linear/univariate/ettm1UNI.sh
+```
+To train *NLinear* and *DLinear* on **weather** daset, use :  
+```sh
+sh scripts/EXP-LongForecasting/Linear/univariate/weatherUNI.sh
+```
+To train *NLinear* and *DLinear* on **electricity** daset, use :  
+```sh
+sh scripts/EXP-LongForecasting/Linear/univariate/electricityUNI.sh
+```
+To train *vanilla transformer* on **ETTm1** daset, use :  
+```sh
+sh scripts/EXP-LookBackWindow/Formers_LookBackWindow.sh
+```
+The results will be in **logs** directory.
+
 # Are Transformers Effective for Time Series Forecasting? (AAAI 2023)
 
 This repo is the official Pytorch implementation of LTSF-Linear: "[Are Transformers Effective for Time Series Forecasting?](https://arxiv.org/pdf/2205.13504.pdf)". 
