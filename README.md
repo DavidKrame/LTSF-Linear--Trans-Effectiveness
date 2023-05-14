@@ -1,17 +1,17 @@
 # EXEMPLES
-To train *NLinear* and *DLinear* on **ETTh1** daset, use :  
+To train *NLinear* and *DLinear* on **ETTh1** dataset, use :  
 ```sh
 sh scripts/EXP-LongForecasting/Linear/univariate/etth1UNI.sh
 ```
-To train *NLinear* and *DLinear* on **ETTm1** daset, use :  
+To train *NLinear* and *DLinear* on **ETTm1** dataset, use :  
 ```sh
 sh scripts/EXP-LongForecasting/Linear/univariate/ettm1UNI.sh
 ```
-To train *NLinear* and *DLinear* on **weather** daset, use :  
+To train *NLinear* and *DLinear* on **weather** dataset, use :  
 ```sh
 sh scripts/EXP-LongForecasting/Linear/univariate/weatherUNI.sh
 ```
-To train *NLinear* and *DLinear* on **electricity** daset, use :  
+To train *NLinear* and *DLinear* on **electricity** dataset, use :  
 ```sh
 sh scripts/EXP-LongForecasting/Linear/univariate/electricityUNI.sh
 ```
