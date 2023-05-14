@@ -22,7 +22,6 @@ sh scripts/EXP-LookBackWindow/Formers_LookBackWindow.sh
 The results will be in **logs** directory.
 ## LTSF-Linear
 ### LTSF-Linear family
-![image](pics/Linear.png)
 LTSF-Linear is a set of linear models. 
 - Linear: It is just a one-layer linear model, but it outperforms Transformers.
 - NLinear: **To boost the performance of Linear when there is a distribution shift in the dataset**, NLinear first subtracts the input by the last value of the sequence. Then, the input goes through a linear layer, and the subtracted part is added back before making the final prediction. The subtraction and addition in NLinear are a simple normalization for the input sequence.
