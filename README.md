@@ -1,4 +1,4 @@
-# EXEMPLES
+## EXEMPLES
 To train *NLinear* and *DLinear* on **ETTh1** dataset, use :  
 ```sh
 sh scripts/EXP-LongForecasting/Linear/univariate/etth1UNI.sh
