@@ -15,7 +15,7 @@ To train *NLinear* and *DLinear* on **electricity** daset, use :
 ```sh
 sh scripts/EXP-LongForecasting/Linear/univariate/electricityUNI.sh
 ```
-To train *vanilla transformer* on **ETTm1** daset, use :  
+To train *vanilla transformer* on **all datasets**, use :  
 ```sh
 sh scripts/EXP-LookBackWindow/Formers_LookBackWindow.sh
 ```
